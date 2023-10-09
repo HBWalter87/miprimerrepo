@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="./brand/png/oeste-camisetas-website-favicon-color.png" type="image/x-icon">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <header class="header-grid">
+        <img src="./brand/svg/logo-no-background.svg" alt="Logo" class="logo animate__animated animate__bounceInDown">
+        <h1 class="animate__animated animate__bounceInUp">OESTE CAMISETAS</h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn">Inicio</a>
+                    <a href="camisetas.html" class="dropbtn">Camisetas</a>
+                    <a href="nosotros.html" class="dropbtn">Nosotros</a>
+                    <a href="#contacto" class="dropbtn">Contacto</a>
+                   
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Formulario de contacto</h1>
+        <h3>Contacto</h3>
+        <form class="Formulario" action="enviar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <br>
+            <br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="apellido" id="apellido" name="apellido">
+            <br>
+            <br>
+
+            <label for="email" >Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+            <br>
+            <br>
+
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+            <br>
+            <br>
+
+            <button type="submit">Enviar</button>
+        </form>
+        
+    </section>
+    <div class="container"><iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105014.93111679863!2d-58.77546815664059!3d-34.6618595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc745a80a690f%3A0x8161229f597419ba!2sEstadio%20Nuevo%20Francisco%20Urbano!5e0!3m2!1ses!2sar!4v1696337742128!5m2!1ses!2sar" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <footer>
+        <div class="foot">
+            <div>
+                <a id="contacto" href="contacto.html">Contactanos</a>
+                <p>Nos comunicaremos lo más pronto posible</p>
+            </div>
+            <img src="./brand/svg/logo-no-background.svg" alt="Logo" class="logo">
+            <div>
+                <p>Alberto Gómez</p>
+                <p>Martín Miselli</p>
+                <p>Patricia Piñero</p>
+                <p>Walter Arancibia</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p class="copy">&copy; 2023 <span code translate="no">Oeste Camisetas</span></p>
+           
+    </footer>
+</body>
+</html>
