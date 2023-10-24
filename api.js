@@ -11,10 +11,10 @@ fetch('https://allsportsapi2.p.rapidapi.com/api/rankings/uefa/clubs',options).th
     console.log(data);
     let count=0
     let cad = `<h1>Top 10 de Clubes UEFA</h1>
-                 <table border=2>
+                 <table border='2'>
                      <tr>
-                         <td>Club</td>
-                         <td>Posición</td>
+                         <td class="pos">Club</td>
+                         <td class="pos">Posición</td>
                      </tr>`;
     
 
@@ -32,5 +32,6 @@ fetch('https://allsportsapi2.p.rapidapi.com/api/rankings/uefa/clubs',options).th
                       }
                       cad=cad + `</table>`;
     
+    document.getElementById('espera').style.display = 'none';
     document.querySelector("main").innerHTML = cad;
 });
