@@ -15,18 +15,24 @@
     box-sizing: border-box;
 }
 
+.logo-normal{
+
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
 body{
     font-family: "Inkut","Fira",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .header-grid {
     display:grid;
-    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
     background-color: #333;
     color: white;
-    padding: 1px;
+    
 }
 
 header h1{
@@ -43,10 +49,10 @@ header h1{
     text-align: end;
 }
 
-.logo2 {
-    width: 10vw;
+nav{
+
     height: 10vw;
-    text-align: end;
+    width: 30vw;
 }
 
 nav ul {
@@ -55,50 +61,26 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 nav li {
-    margin-left: 4vw;
+    margin-left: 3vw;
 }
 
-.dropbtn{
-    color: #FE6152;
-    margin-right: 10px;
+.dropbtn {
+    color: #ffffff;
+    margin: 1vw 1vw 1vw 1vw;
     font-size: 2vw;
 }
 
-.dropdown {
-    text-align: start;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #4e4d4d;
-    color: white;
+.copy.dropbtn {
+    color: #ffffff;
 }
 
 section h2{
     text-align: center;
+    font-size: 2vw;
 }
 
 .camisetas{
@@ -113,9 +95,9 @@ section h2{
 
 .producto{
     display: flex;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 1px 5px 16px #888;
+    padding: 1vw;
+    border-radius: 1vw;
+    box-shadow: 1vw 5vw 16vw #888;
     min-width: 25vw;
     min-height: 30vw;
     align-items: center;
@@ -144,17 +126,23 @@ footer a{
     font-size: 1vw;
 }
 
-.nombres{
+.arriba{
+    background-color: #28353B;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    text-align: center;
     align-items: center;
+    gap: 10px;
 }
 
 .copy{
     text-align: center;
     font-size: 1vw;
     background-color: #28353B;
+    margin: 0px;
+}
+
+.bk {
     color: white;
 }
 
@@ -164,12 +152,6 @@ footer a{
 	object-fit: cover;
 }
 
-html {
-    height: 100%;
-}
-body {
-    height: 100%;
-}
 h2{
 
     font-size: 1vw;
@@ -198,8 +180,6 @@ justify-content: end;
 }
 .container {
     position: relative;
-    columns: 1fr;
-    grid-row: 1fr;
     width: 100%;
     height: 50%;
     overflow: hidden;
@@ -208,45 +188,500 @@ justify-content: end;
   }
   
   .responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    height: 400px;
     width: 100%;
-    height: 100%;
-    
-  }
-.formulario{
-
-    position: static;
-    width: 100%;
-    overflow: hidden;
-    padding: 50%;
-    margin: 0;
-
-}
-
-input,  textarea 
-{
-    width: 20%;
-    padding: 1%;
-    border: 1px solid lighten;
-    font-size: 100%;
-
   }
 
-  button{
-    width: 8%;
-    padding: 1%;
-    border: 1px solid lighten;
-    font-size: 120%;
-    
-  }
+
 
   a:link {
     color: #FE6152 ;
     }
      
- a:visited {
-        color: green;}
+
+#pagForm {
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form h1 {
+    font-size: 24px;
+}
+
+form h3 {
+    font-size: 18px;
+}
+
+.Formulario {
+    position: relative;
+    margin: 20px 0;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #848181;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+
+form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+form button:enabled {
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form button:active {
+    background-color: #004599;
+}
+
+form {
+    margin-left: 20%;
+}
+
+.Formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-inner {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.imgDer {
+    margin-right: 5px;
+}
+
+.nosotros {
+    padding: 5px 15px;
+}
+
+.cositosIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+
+.cositos{
+    font-size: small;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: small;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 281px;
+}
+
+.copy {
+    margin-bottom: 0px;
+}
+
+.fotoDiv{
+    width: 90%;
+    margin: 2px auto;
+}
+
+.fotoDiv img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+@media screen and (min-width:751px) and (max-width: 1250px){
+
+    .camisetas {
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .logo {
+        height: 15vw;
+        width: 15vw; 
+    }
+
+    .logo-normal{
+        height: 3vw;
+        width: 3vw;
+    }
+    
+
+    .animate__animatedanimate__bounceInDown {
+        height: 200px;
+        width: 200px;
+        text-align: end;
+    }
+
+    .dropdown {
+        height: fit-content;
+        width: fit-content;
+
+    }
+    .copy{
+        font-size: 2vw;
+        text-align: center;
+    }
+    .img-normalizada{
+        width: 40vw;
+        height: 50vw;
+        
+    }  
+
+    .foot{
+        background-size: 0.5vw;
+        font-size: 2vw;
+    }
+    
+    
+    .title{
+
+        font-size: 3vw;
+    }
+    
+    .title2{
+
+        font-size: 2vw;
+    }
+
+}
+
+@media screen and (min-width:500px) and (max-width: 749px) {
+    .camisetas {
+    grid-template-columns: repeat(2, 1fr)
+    }
+
+    ul {
+        height: 10vw;
+     
+    }
+
+    .logo-normal{
+
+        height: 2vw;
+        width: 2vw;
+    }
+
+    .img-normalizada{
+        width: 40vw;
+        height: 60vw;
+        
+    }  
+    .logo {
+        width: 100px;
+        height: 100px;
+        text-align: end;
+    }
+
+    .animate__animatedanimate__bounceInUp {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .animate__animatedanimate__bounceInDown{
+        width: 150vw;
+        height: 150vw;
+        text-align: end;   
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .copy{
+        text-align: center;
+        font-size: 2vw;
+    }
+    .foot{
+        background-size: 0.5vw;
+        font-size: 2vw;
+    }
+    .img-normalizada{
+        width: 40vw;
+        height: 50vw;
+        
+    }  
+
+    .club{
+        font-size: 3vw;
+    }
+    .link{
+        font-size: 3vw;
+    }
+
+    .logo-normal{
+
+        height: 3vw;
+        width: 3vw;
+    }
+
+    .title{
+
+        font-size: 3vw;
+    }
+    
+    .title2{
+
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width: 499px) {
+    body{
+        width: 100vw;
+
+    }
+
+    .copy{
+        text-align: center;
+        font-size: 2vw;
+    }
+    .img-normalizada{
+        width: 60vw;
+        height: 80vw;
+        
+    }   
+    
+        
+    ul {
+        height: 8vw;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .camisetas {
+    grid-template-columns: 2fr
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        text-align: end;
+    }
+
+    .animate__animatedanimate__bounceInUp {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .animate__animatedanimate__bounceInUp {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    
+    .copy{
+        text-align: center;
+        size: 100%;
+    }
+    .html, body{
+        width: 100%;
+    }
+
+    .foot{
+        background-size: 0.5vw;
+        font-size: small;
+    }
+
+    section{
+
+        font-size: 5vw;
+    }
+
+    section h2{
+        font-size: 7vw;
+    }
+
+   
+    .dropdown{
+        display:flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        flex-wrap:wrap;
+    }
+
+    .logo-normal{
+
+        height: 3vw;
+        width: 3vw;
+    }
+
+    .title{
+
+        font-size: 3vw;
+    }
+    
+    .title2{
+
+        font-size: 2vw;
+    }
+
+    #pagForm h2, h3 {
+        font-size: medium;
+    }
+}        
+
+@media screen and (max-width:856px) {
+    .cositosIndex{
+        grid-template-columns: 1fr;
+    }
+    .cositos h3{
+        font-size: small;
+    }
+
+    .cositos p{
+        font-size: small;
+    }
+
+    .table h1 {
+        font-size: smaller;
+    }
+}
+
+@media screen and (max-width:321px) {
+    .logo{
+        display: none;
+    }
+    .header-grid {
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+    }
+    .nav {
+        height: auto;
+        width: auto;
+    }
+    .header-grid h1{
+        font-size: small;
+    }
+
+    .arriba div img{
+        width: 7px;
+    }
+
+    .foot {
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:301px) {
+    .header-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+    }
+
+    nav li{
+        margin: auto;
+    }
+
+    .arriba p{
+        display: none;
+    }
+
+    #pagForm {
+        font-size: xx-small;
+    }
+
+    #pagForm h2{
+        font-size: x-small;
+    }
+}
+
+.table {
+    text-align: center;
+    background: linear-gradient(white, grey);
+    padding: 5px 5px;
+}
+
+table {
+    width: 60%;
+    margin: 0px auto;
+}
+
+.pos {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 
+*/
+.info-icon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.info-icon-image {
+    width: 30px;
+    cursor: pointer;
+}
+
+.info-icon-text {
+    display: none;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.header-grid:hover .info-icon {
+    display: block;
+}
+
+.info-icon:hover .info-icon-text {
+    display: block;
+}
