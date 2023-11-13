@@ -162,12 +162,16 @@ section{
 
 .title{
 
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 .title2{
 
-    font-size: 1vw;
+    font-size: 2vw;
+}
+
+.codo{
+    color: #000000;
 }
 
 .name{
@@ -542,16 +546,7 @@ form {
     section h2{
         font-size: 7vw;
     }
-
-   
-    .dropdown{
-        display:flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        flex-wrap:wrap;
-    }
-
+ 
     .logo-normal{
 
         height: 3vw;
@@ -661,12 +656,13 @@ table {
 /* 
 */
 .info-icon {
-    position: absolute;
+    position: fixed;
     top: 5px;
     left: 5px;
 }
 
 .info-icon-image {
+    align-items: center;
     width: 30px;
     cursor: pointer;
 }
