@@ -28,7 +28,7 @@
     <section id="pagForm">
         <h2>Comunicate con nosotros!</h2>
         <h3>Contacto</h3>
-        <form class="Formulario" action="https://formsubmit.co/arancibiawalter0@gmail.com" method="POST" onsubmit="validarCampo()">
+        <form class="Formulario" action="https://formsubmit.co/arancibiawalter0@gmail.com" method="POST" onsubmit="return validarCampo()">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre">
             <br>
@@ -53,7 +53,7 @@
             <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
             <br>
 
-            <button id="btnEnviar" type="submit" disabled >Enviar</button>
+            <button id="btnEnviar" type="submit">Enviar</button>
         </form>
         
     </section>
@@ -61,7 +61,7 @@
     <footer>
         <div class="foot">
             <div>
-                <a id="contacto" href="HTML/contacto.html">Contactanos</a>
+                <a id="contacto" href="contacto.html">Contactanos</a>
                 <p>Nos comunicaremos lo más pronto posible</p>
             </div>
             <img src="./brand/svg/logo-no-background.svg" alt="Logo" class="logo">
@@ -92,6 +92,6 @@
         <p class="copy">&copy; 2023 <span code translate="no">Oeste Camisetas</span></p>
 
     </footer>
-    <script src="/JS/form.js"></script>
+    <script src="JS/form.js"></script>
 </body>
 </html>
