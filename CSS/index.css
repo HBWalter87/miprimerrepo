@@ -370,12 +370,16 @@ form {
         
     }  
 
-    .foot{
+    .footer-container{
         background-size: 0.5vw;
         font-size: 2vw;
     }
     
-    
+    .footer {
+	height: fit-content;   
+	width: fit-content;    
+    }
+	
     .title{
 
         font-size: 3vw;
@@ -439,9 +443,15 @@ form {
         text-align: center;
         font-size: 2vw;
     }
-    .foot{
+    .footer-container{
         background-size: 0.5vw;
         font-size: 2vw;
+
+    .footer {
+	height: fit-content;   
+	width: fit-content;    
+    }	    
+	    
     }
     .img-normalizada{
         width: 40vw;
@@ -533,10 +543,16 @@ form {
         width: 100%;
     }
 
-    .foot{
+    .footer-container{
         background-size: 0.5vw;
         font-size: small;
     }
+
+    .footer {
+	height: fit-content;   
+	width: fit-content;    
+    }
+	
 
     section{
 
@@ -605,10 +621,16 @@ form {
         width: 7px;
     }
 
-    .foot {
+    .footer-container {
         grid-template-columns: 1fr 1fr;
         justify-content: space-around;
     }
+
+.footer {
+	height: fit-content;   
+	width: fit-content;    
+    }
+	
 }
 
 @media screen and (max-width:301px) {
