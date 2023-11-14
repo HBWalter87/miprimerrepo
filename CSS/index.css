@@ -110,27 +110,85 @@ footer{
     font-size: small;
 }
 
-footer a{
-    text-decoration: none;
-    color: white;
-}
-
-.foot{
-    align-items: center;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    justify-items: center;
-    font-size: 1vw;
-}
-
-.arriba{
+.footer {
     background-color: #28353B;
-    display: flex;
-    flex-direction: column;
+    color: #ffffff;
+    font-size: 1vw;
     text-align: center;
+}
+
+  .footer-container ul {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 0%;
+    margin: 0 auto;
+    list-style-type: none;
+    width: max-content;
+    height: fit-content;
+    
+  }
+  
+.footer-container {
+    display: grid;
+    margin: auto;
     gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #28353B;
+  }
+  
+  .footer-container ul li {
+    line-height: 2.5;
+  }
+  
+.footer-container ul li p {
+    margin: auto;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.Redes.Sociales {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  background-color: #28353B;;
+  
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.links a {
+    margin: 0 30px;
+}
+
+.links a i {
+    font-size: 3rem;
+}
+
+.fab.fa-facebook-f {
+    color: #1877f2;
+}
+
+.fab.fa-whatsapp {
+    color: #25d366;
+}
+
+.fab.fa-instagram {
+    color: #e4405f;
+}
+
+.fab.fa-twitter {
+    color: #1da1f2;
+}
+
+.fab.fa-linkedin {
+    color: #0077b5;
 }
 
 .copy{
