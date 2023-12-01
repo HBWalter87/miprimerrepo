@@ -1,4 +1,5 @@
 const { createApp } = Vue
+console.log("Creando")
 createApp({
     data() {
         return {
