@@ -57,7 +57,7 @@ createApp({
             fetch(this.url, options)
                 .then(function () {
                     alert("Registro grabado")
-                    window.location.href = "./productos.html";
+                    window.location.href = "./camisetas";
                 })
                 .catch(err => {
                     console.error(err);
