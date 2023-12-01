@@ -47,7 +47,7 @@
                                     <img width="60" :src="producto.imagen" :alt="producto.nombre" class="img-normalizada">
                                     <p>Apurate! Nos quedan: {{producto.stock}}</p>
                                     <a href="#">Agregar al carrito</a>
-                                    <a class="btn btn-primary" :href="'producto_update.html?id='+ producto.id" >Editar</a>
+                                    <a class="btn btn-primary" style="background-color: black; color: white;" :href="'producto_update.html?id='+ producto.id" >Editar</a>
                                     <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
                                 </div>
                             </div>

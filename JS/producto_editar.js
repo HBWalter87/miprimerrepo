@@ -10,7 +10,7 @@ createApp({
             imagen: "",
             stock: 0,
             precio: 0,
-            url: 'https://hbwalter87.pythonanywhere.com/productos' + id,
+            url: 'https://hbwalter87.pythonanywhere.com/productos/' + id,
         }
     },
     methods: {
