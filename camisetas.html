@@ -37,13 +37,15 @@
             </section>
             <section v-else>
                 <div class="camisetas">
-                            <div class="prducto" v-for="producto in productos">
-                                <p scope="row">Producto número: {{producto.id}}</p>
-                                <p>{{producto.nombre}}</p>
-                                <p>A tan solo ${{producto.precio}}!</p>
-                                <img width="60" :src="producto.imagen" :alt="producto.nombre" class="img-normalizada">
-                                <p>Apurate! Nos quedan:{{producto.stock}}</p>
-                                <a href="#">Agregar al carrito</a>
+                            <div class="" v-for="producto in productos">
+                                <div class="producto">
+                                    <p scope="row">Producto número: {{producto.id}}</p>
+                                    <p>{{producto.nombre}}</p>
+                                    <p>A tan solo ${{producto.precio}}!</p>
+                                    <img width="60" :src="producto.imagen" :alt="producto.nombre" class="img-normalizada">
+                                    <p>Apurate! Nos quedan: {{producto.stock}}</p>
+                                    <a href="#">Agregar al carrito</a>
+                                </div>
                             </div>
                 </div>
             </section>
