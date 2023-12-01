@@ -92,15 +92,16 @@ section h2{
 }
 
 .producto{
+    font-size: x-small;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     padding: 1vw;
     border-radius: 1vw;
     box-shadow: 1vw 5vw 16vw #888;
     min-width: 25vw;
     min-height: 30vw;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 
 footer{
