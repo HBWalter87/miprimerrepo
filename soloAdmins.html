@@ -25,7 +25,7 @@
             </ul>
         </nav>
     </header>
-    <h2>CUDIADO!!</h2>
+    <h2>CUIDADO!!</h2>
     <h2>Esta página sólo debería ser vista por los administradores de la página!</h2>
     <div id="app">
         <h1>Camisetas</h1>
@@ -47,7 +47,7 @@
                                     <img width="60" :src="producto.imagen" :alt="producto.nombre" class="img-normalizada">
                                     <p>Apurate! Nos quedan: {{producto.stock}}</p>
                                     <a href="#">Agregar al carrito</a>
-                                    <a class="btn btn-primary" style="background-color: black; color: white;" :href="'producto_update.html?id='+ producto.id" >Editar</a>
+                                    <a class="btn btn-primary" style="color: black;" :href="'producto_update.html?id='+ producto.id" >Editar</a>
                                     <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
                                 </div>
                             </div>
